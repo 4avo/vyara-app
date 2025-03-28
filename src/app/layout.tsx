@@ -27,7 +27,6 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="min-h-screen bg-black flex flex-col">
           {/* Add flag-colored line globally in layout */}
-          <div className="h-1 bg-gradient-to-r from-[#ffffff] via-[#009639] to-[#d71a3f] mb-4"></div>
 
           {/* Render children (this will be the page content) */}
           <main className="flex-grow p-8 bg-black">{children}</main>

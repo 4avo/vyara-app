@@ -5,18 +5,20 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black flex flex-col relative scroll-smooth">
       {/* Header - Shortened navbar */}
-      <header className="bg-black p-2 flex justify-end items-center fixed top-0 left-0 w-full z-10">
-        <div className="absolute top-0 left-0 z-50">
-          <Image src="/images/logo.jpg" alt="Logo" width={150} height={150} />
-        </div>
-        <nav className="top-10 flex gap-6 text-white font-semibold text-xl">
-          <a href="#home" className="hover:underline">HOME</a>
-          <a href="#about" className="hover:underline">ABOUT US</a>
-          <a href="#content" className="hover:underline">CONTENT</a>
-          <a href="#support" className="hover:underline">ПОДКРЕПИ</a>
-          <a href="#contacts" className="hover:underline">КОНТАКТИ</a>
-        </nav>
-      </header>
+      <header className="bg-black p-4 flex items-center fixed top-0 left-0 w-full z-10">
+  <div className="flex items-center gap-4 z-50">
+    <div className="flex-shrink-0">
+      <Image src="/images/logo.jpg" alt="Logo" width={150} height={150} />
+    </div>
+    <nav className="flex gap-6 text-white font-semibold text-xl">
+      <a href="#home" className="hover:underline">HOME</a>
+      <a href="#about" className="hover:underline">ABOUT US</a>
+      <a href="#content" className="hover:underline">CONTENT</a>
+      <a href="#support" className="hover:underline">ПОДКРЕПИ</a>
+      <a href="#contacts" className="hover:underline">КОНТАКТИ</a>
+    </nav>
+  </div>
+</header>
 
       <main className="flex-grow p-8 bg-black mt-0">
         {/* Home Section */}
